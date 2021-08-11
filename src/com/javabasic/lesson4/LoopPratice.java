@@ -1,42 +1,24 @@
-package com.javabasic;
+package com.javabasic.lesson4;
 
 import java.util.Scanner;
 
 public class LoopPratice {
     public static void main(String[] args) {
-        int Number1 = inPutOne();
+        int Number1 = enterNumber();
         sumOfNumbers(Number1);
-        int Number2 = inPutTwo();
+        int Number2 = enterNumber();
         multiplicationTable(Number2);
-        int N = inPutThree();
+        int N = enterNumber();
         checkPrimes(N);
     }
 
 
 
-    public static int inPutOne() {
-        System.out.println("Enter Number1 : ");
+    public static int enterNumber() {
+        System.out.println("Enter number : ");
         Scanner scanner = new Scanner(System.in);
-        int Number1 = scanner.nextInt();
-        return Number1;
-    }
-
-
-
-    public static int inPutTwo() {
-        System.out.println("Enter Number2 : ");
-        Scanner scanner = new Scanner(System.in);
-        int Number2 = scanner.nextInt();
-        return Number2;
-    }
-
-
-
-    public static int inPutThree() {
-        System.out.println("Enter N : ");
-        Scanner scanner = new Scanner(System.in);
-        int N = scanner.nextInt();
-        return N;
+        int Number = scanner.nextInt();
+        return Number;
     }
 
 

@@ -1,4 +1,4 @@
-package com.javabasic.stringlesson;
+package com.javabasic.lesson3;
 
 public class StringLesson {
     public static void main(String[] args) {
@@ -7,11 +7,10 @@ public class StringLesson {
 
         String h1 = "Toi";
         String h2 = "Yeu";
-        String h3 = h1.concat(h2);
-        String h4 = "Da";
-        String h5 = "Nang";
-        String h6 = h4.concat(h5);
-        String h7 = h1.concat(h6);
+        String h3 = "Da";
+        String h4 = "Nang";
+        String h5 = h1.concat(h2).concat(h3).concat(h4);
+
 
         String x1 = "";
         String x2 = "sql";
@@ -21,7 +20,7 @@ public class StringLesson {
         System.out.println("Split string: " + h.substring(0,3) + "," + h.substring(3,6) + ","
                 + h.substring(6,8) + "," + h.substring(8,12));
         //3
-        System.out.println("String concatenation: " + h3 + h7);
+        System.out.println("String concatenation: " + h3 + h5);
         //4
         System.out.println("Cutting strings: " + h.substring(6,12));
         //5
