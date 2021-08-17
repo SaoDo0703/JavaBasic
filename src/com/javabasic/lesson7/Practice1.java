@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Practice1 {
     public static void main(String[] args) {
         int N = enterNumber();
-        CheckPrimeNumber(N);
+        checkPrimeNumber(N);
         printf(N);
     }
 
@@ -20,7 +20,7 @@ public class Practice1 {
 
 
 
-    public static boolean CheckPrimeNumber(int N) {
+    public static boolean checkPrimeNumber(int N) {
         if (N < 2) {
             return false;
         }
@@ -34,14 +34,13 @@ public class Practice1 {
     }
 
 
-
     public static void printf(int N) {
         System.out.printf("All primes less than N are: ", N);
         if (N >= 2) {
             System.out.print(2);
         }
         for (int i = 3; i < N; i += 2) {
-            if (CheckPrimeNumber(i)) {
+            if (checkPrimeNumber(i)) {
                 System.out.print(" " + i);
             }
         }
