@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Practice4 {
     public static void main(String[] args) {
         int number1 = enterNumber();
-        CheckPrimeNumber(number1);
+        checkPrimeNumber(number1);
         printf(number1);
     }
 
@@ -13,13 +13,13 @@ public class Practice4 {
     public static int enterNumber(){
         System.out.println("Enter number : ");
         Scanner scanner = new Scanner(System.in);
-        int Number = scanner.nextInt();
-        return Number;
+        int number = scanner.nextInt();
+        return number;
     }
 
 
 
-    public static boolean CheckPrimeNumber(int number1) {
+    public static boolean checkPrimeNumber(int number1) {
         if (number1 < 2) {
 
             return false;
@@ -43,7 +43,7 @@ public class Practice4 {
         int dem = 0;
         int i = 2;
         while (dem < number1) {
-            if (CheckPrimeNumber(i)) {
+            if (checkPrimeNumber(i)) {
                 System.out.print(i + " ");
                 dem++;
             }

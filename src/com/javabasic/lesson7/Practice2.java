@@ -14,8 +14,8 @@ public class Practice2 {
     public static int enterNumber(){
         System.out.println("Enter number : ");
         Scanner scanner = new Scanner(System.in);
-        int Number = scanner.nextInt();
-        return Number;
+        int number = scanner.nextInt();
+        return number;
     }
 
 
